@@ -1,0 +1,103 @@
+//fonts
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+
+//font-sizes
+$font-size-h1: 53px;
+$font-size-h2: 38px;
+$font-size-h3: 18px;
+$font-size-p: 16px;
+$font-size-nav:18px;
+//letter spacing
+$sub-title-spacing:5px;
+
+//font color
+$font-color-dark:#313131;
+$font-color-white:#FFFFFF;
+
+//block colors
+$green-color-dark:#50B56F;
+$green-color-light:#A4D3AE;
+$black-color-dark:#313131;
+$black-color-light:#4E4E4E;
+$white-color:#FFFFFF;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, p, h2, h3, a{
+    color: $black-color-dark;
+}
+h3, h1{
+    font-family: $font-family-poppins;
+}
+p, h2, h3, a{
+    font-family: $font-family-montserrat;
+}
+
+.dark-button a{
+    color: $font-color-white;
+    text-decoration: none;
+}
+
+.green-button{
+    padding: 20px;
+    background-color: $green-color-dark;
+    color: $font-color-white;
+    font-size: $font-size-h3;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    font-family: $font-family-poppins;
+    text-decoration: none;
+}
+
+.green-button:hover{
+    transform:scale(105%)
+}
+
+.dark-button:hover{
+    transform:scale(105%)
+}
+
+.dark-button{
+    padding: 20px;
+    cursor: pointer;
+    background-color: $black-color-dark;
+    text-decoration: none;
+    font-size: $font-size-h3;
+    font-weight: 800;
+    color: $font-color-white;
+    font-family: $font-family-poppins;
+    border: none;
+}
+
+.background-effect{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 60%;
+    z-index:-1;
+}
+.second-background-effect{
+    position: absolute;
+    left: 0;
+    opacity: 60%;
+    z-index:-1;
+}
+
+
+
+
+@import "_header";
+@import "_hero";
+@import "_functions";
+@import "_pricing";
+@import "_contact";
+@import "_footer";
+@import "_images";
+@import "_contact-full";
+@import "_about";

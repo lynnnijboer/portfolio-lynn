@@ -1,0 +1,70 @@
+.header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+
+    nav{
+        padding: 20px 30px 20px 0px;
+        width: 100%;
+        max-width: calc(100% - ((100% - 1400px) / 2));
+        margin-left: auto;
+    
+        ul{
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+
+            .logo{
+                a{
+                    font-size: 30px;
+                    font-family: $font-family-poppins;
+                }
+            }
+
+            .menu-items{
+                display: flex;
+                align-items: center;
+
+                .items{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px;
+                }
+
+            }
+
+            li{
+                padding: 20px;
+                list-style-type: none;
+
+                a{
+                    text-decoration: none;
+                    font-size: $font-size-nav;
+                    font-family: $font-family-montserrat;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+
+                a:hover{
+                    color: $green-color-dark;
+                    cursor: pointer;
+                }
+                .current{
+                    color: $green-color-dark;
+                }
+            }
+
+
+            .green-button{
+                margin-right: 10px;
+            }
+
+            .green-button, .dark-button{
+                padding: 10px;
+            }
+        }
+    }
+}

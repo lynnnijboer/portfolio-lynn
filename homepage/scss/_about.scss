@@ -1,0 +1,25 @@
+.about{
+    width: 100%;
+    padding: 200px 0 200px 0;
+
+    .about-wrapper{
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        flex-direction: column;
+
+        .about-text{
+            margin-bottom: 30px;
+            
+            p{
+                letter-spacing: $sub-title-spacing;
+            }
+
+            h2{
+                font-size: $font-size-h2;
+            }
+        }
+    }
+}
